@@ -18,6 +18,11 @@ def calculate_operation():
         num = float(input("Enter a number: "))
         result = num ** NUM_CONSTANT
         return result
+    if choice == 'a':
+        num_1 = float(input("Enter your first number: "))
+        num_2 = float(input("Enter your second number: "))
+        result = num_1 + num_2
+        return result
 
 
 answer = calculate_operation() 
