@@ -31,11 +31,11 @@ def calculate_operation():
             result = num_1 * num_2
             return result
         else:
-            return invalid_operator_result    
+            return "Null. You entered an invalid operator"    
 
 
 answer = calculate_operation() 
-print(f"The Result of your calculation is: {answer}")       
+print(f"The Result of your calculation is {answer}")       
 
 
 
