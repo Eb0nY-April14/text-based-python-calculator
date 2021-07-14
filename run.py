@@ -22,14 +22,13 @@ def calculate_operation():
         num_1 = float(input("Enter your first number: "))
         num_2 = float(input("Enter your second number: "))    
         if choice == 'a':
-        #num_1 = float(input("Enter your first number: "))
-        #num_2 = float(input("Enter your second number: "))
             result = num_1 + num_2
             return result
         elif choice == 'b':
-        #num_1 = float(input("Enter your first number: "))
-        #num_2 = float(input("Enter your second number: "))
             result = num_1 - num_2
+            return result
+        elif choice == 'c':
+            result = num_1 * num_2
             return result
         else:
             return invalid_operator_result    
