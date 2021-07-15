@@ -13,7 +13,7 @@ g for Square Root
 
 def calculate_operation():
     NUM_CONSTANT = 0.5
-    invalid_operator_result = 0.0
+    #invalid_operator_result = 0.0
     if choice == 'g':
         num = float(input("Enter a number: "))
         result = num ** NUM_CONSTANT
@@ -32,7 +32,10 @@ def calculate_operation():
             return result
         elif choice == 'd':
             result = num_1 / num_2
-            return result    
+            return result  
+        elif choice == 'e':
+            result = num_1 % num_2
+            return result        
         else:
             return "Null. You entered an invalid operator"    
 
