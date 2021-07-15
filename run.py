@@ -35,7 +35,10 @@ def calculate_operation():
             return result  
         elif choice == 'e':
             result = num_1 % num_2
-            return result        
+            return result 
+        elif choice == 'f':
+            result = num_1 ** num_2
+            return result            
         else:
             return "Null. You entered an invalid operator"    
 
