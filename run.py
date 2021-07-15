@@ -30,6 +30,9 @@ def calculate_operation():
         elif choice == 'c':
             result = num_1 * num_2
             return result
+        elif choice == 'd':
+            result = num_1 / num_2
+            return result    
         else:
             return "Null. You entered an invalid operator"    
 
