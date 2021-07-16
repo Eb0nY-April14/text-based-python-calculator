@@ -46,4 +46,26 @@ User Experience (UX)
 
         g) I want to be able to calculate the square root of a number and get the right result.  
 
-Visitor Goals
+# Flowchart
+
+The flowchart was used to conceptualise/bring the text-based calculator idea to life. It was drawn manually using pencil and paper to depict how the flow of the program will go.
+
+* View the flowchart below: 
+
+<img src="textBasedCalculatorFlowchart.jpg">
+
+# Technologies Used
+
+* Language Used
+
+    * Python
+
+&nbsp; 
+
+* Tools Used
+
+    * Flowchart using paper and pencil
+
+    * snipping tool to capture screenshots of pep8 validator result, result generated at terminal and images used in the README file.
+
+* Issues Encountered and Resolved    
