@@ -13,12 +13,15 @@ g for Square Root
 def calculate_operation():
     NUM_CONSTANT = 0.5
     if choice == 'g':
-        num = float(input("Enter a number: "))
+        num = input("Enter a number: ")
+        validate_number(num)
         result = num ** NUM_CONSTANT
         return result
     else:
-        num_1 = float(input("Enter your first number: "))
-        num_2 = float(input("Enter your second number: "))
+        num_1 = input("Enter your first number: ")
+        validate_number(num_1)
+        num_2 = input("Enter your second number: ")
+        validate_number(num_2)
         if choice == 'a':
             result = num_1 + num_2
             return result
@@ -41,5 +44,15 @@ def calculate_operation():
             return "Null. You entered an invalid operator"
 
 
+def validate_number(number):
+    try:
+        val = float(number)
+        print("The input entered by the user is Ok!")
+        return val
+    except ValueError:
+        print("""Invalid input, NOT a number,
+              Please try again!""")
+
+
 answer = calculate_operation()
-print(f"The Result of your calculation is {answer}")
+print(f"Result of your calculation is {answer}")
