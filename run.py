@@ -13,32 +13,46 @@ g for Square Root
 def calculate_operation():
     NUM_CONSTANT = 0.5
     if choice == 'g':
-        num = input("Enter a number: ")
+        print("Doing the Square Root Calculation...\n")
+        num = float(input("Enter a number: "))
         validate_number(num)
         result = num ** NUM_CONSTANT
+        print("Square Root Calculation completed Successfully.\n")
         return result
     else:
-        num_1 = input("Enter your first number: ")
+        num_1 = float(input("Enter your first number: "))
         validate_number(num_1)
-        num_2 = input("Enter your second number: ")
+        num_2 = float(input("Enter your second number: "))
         validate_number(num_2)
         if choice == 'a':
+            print("Doing the Add Calculation...\n")
             result = num_1 + num_2
+            print("Add Calculation completed Successfully.\n")
             return result
         elif choice == 'b':
+            print("Doing the Subtract Calculation...\n")
             result = num_1 - num_2
+            print("Subtract Calculation completed Successfully.\n")
             return result
         elif choice == 'c':
+            print("Doing the Multiply Calculation...\n")
             result = num_1 * num_2
+            print("Multiply Calculation completed Successfully.\n")
             return result
         elif choice == 'd':
+            print("Doing the Division Calculation...\n")
             result = num_1 / num_2
+            print("Division Calculation completed Successfully.\n")
             return result
         elif choice == 'e':
+            print("Doing the Modulo Calculation...\n")
             result = num_1 % num_2
+            print("Modulo Calculation completed Successfully.\n")
             return result
         elif choice == 'f':
+            print("Doing the Exponent Calculation...\n")
             result = num_1 ** num_2
+            print("Exponent Calculation completed Successfully.\n")
             return result
         else:
             return "Null. You entered an invalid operator"
