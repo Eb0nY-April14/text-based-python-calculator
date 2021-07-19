@@ -20,15 +20,16 @@ def calculate_operation():
         print("Square Root Calculation completed Successfully.\n")
         return result
     else:
-        validnum_1 = request_any_number()
-        print("test", validnum_1)
-        print(f"The data type of {validnum_1} is {(type(validnum_1))}")
-        validnum_2 = request_any_number()
-        print("test", validnum_2)
-        print(f"The data type of {validnum_2} is {(type(validnum_2))}")
+        num_1 = request_any_number("the first")
+        num_2 = request_any_number("the second")
+        # print("test", validnum_1)
+        # print(f"The data type of {validnum_1} is {(type(validnum_1))}")
+        # validnum_2 = request_any_number()
+        # print("test", validnum_2)
+        # print(f"The data type of {validnum_2} is {(type(validnum_2))}")
         if choice == 'a':
             print("Doing the Add Calculation...\n")
-            result = validnum_1 + validnum_2
+            result = num_1 + num_2
             print(result)
             print("Add Calculation completed Successfully.\n")
             return result
