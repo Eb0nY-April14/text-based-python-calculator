@@ -1,33 +1,34 @@
-choice = input("""
-Please Enter the operator you need for your calculation:
-a for Add
-b for Subtract
-c for Multiply
-d for Divide
-e for Modulo
-f for Power(Exponent)
-g for Square Root
-""")
+choice = input(
+"Please Enter the operator you need for your calculation:\n"
+"a for Add\n"
+"b for Subtract\n"
+"c for Multiply\n"
+"d for Divide\n"
+"e for Modulo\n"
+"f for Power(Exponent)\n"
+"g for Square Root\n")
 
 
 def calculate_operation():
     NUM_CONSTANT = 0.5
-    if choice == 'g':
+    if choice == "g":
         print("Doing the Square Root Calculation...\n")
-        num = input("Enter a number:\n")
-        val_num = validate_number(num)
-        if validate_number(val_num):
-            result = val_num ** NUM_CONSTANT
-            print("Square Root Calculation completed Successfully.\n")
-            return result
+        sqrt_num = request_any_number("a")
+        # val_num = validate_number(num)
+        # if validate_number(val_num):
+        result = sqrt_num ** NUM_CONSTANT
+        print("Square Root Calculation completed Successfully.\n")
+        return result
     else:
         validnum_1 = request_any_number()
         print("test", validnum_1)
+        print(f"The data type of {validnum_1} is {(type(validnum_1))}")
         validnum_2 = request_any_number()
         print("test", validnum_2)
+        print(f"The data type of {validnum_2} is {(type(validnum_2))}")
         if choice == 'a':
             print("Doing the Add Calculation...\n")
-            result = float(validnum_1) + float(validnum_2)
+            result = validnum_1 + validnum_2
             print(result)
             print("Add Calculation completed Successfully.\n")
             return result
