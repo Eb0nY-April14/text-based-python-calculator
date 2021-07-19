@@ -1,12 +1,14 @@
-choice = input(
-"Please Enter the operator you need for your calculation:\n"
-"a for Add\n"
-"b for Subtract\n"
-"c for Multiply\n"
-"d for Divide\n"
-"e for Modulo\n"
-"f for Power(Exponent)\n"
-"g for Square Root\n")
+def choose_operator():
+    global choice
+    choice = input(
+                   "Please Enter the operator you need for your calculation:\n"
+                   "a for Add\n"
+                   "b for Subtract\n"
+                   "c for Multiply\n"
+                   "d for Divide\n"
+                   "e for Modulo\n"
+                   "f for Power(Exponent)\n"
+                   "g for Square Root\n")
 
 
 def calculate_operation():
@@ -104,3 +106,10 @@ def request_any_number(pos):
 print("Welcome to our text-based Calculator")
 answer = calculate_operation()
 print(f"Result of your calculation is {answer}")
+
+response = input("Would you like to Perform another Calculation y/n? ")
+if response == "y" or response == "Y":
+    print(response)
+# else:
+#    break
+    # print(response)
