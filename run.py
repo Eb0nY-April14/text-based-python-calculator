@@ -15,18 +15,20 @@ def calculate_operation():
     if choice == 'g':
         print("Doing the Square Root Calculation...\n")
         num = input("Enter a number:\n")
-        validate_number(num)
-        result = num ** NUM_CONSTANT
-        print("Square Root Calculation completed Successfully.\n")
-        return result
+        val_num = validate_number(num)
+        if validate_number(val_num):
+            result = val_num ** NUM_CONSTANT
+            print("Square Root Calculation completed Successfully.\n")
+            return result
     else:
-        num_1 = input("Enter your first number:\n")
-        validate_number(num_1)
-        num_2 = input("Enter your second number:\n")
-        validate_number(num_2)
+        validnum_1 = request_any_number()
+        print("test", validnum_1)
+        validnum_2 = request_any_number()
+        print("test", validnum_2)
         if choice == 'a':
             print("Doing the Add Calculation...\n")
-            result = num_1 + num_2
+            result = float(validnum_1) + float(validnum_2)
+            print(result)
             print("Add Calculation completed Successfully.\n")
             return result
         elif choice == 'b':
@@ -58,14 +60,39 @@ def calculate_operation():
             return "Null. You entered an invalid operator"
 
 
+def request_any_number():
+    num = input("Enter a number:\n")
+    print(f"The number entered by the user is {num}")
+    print(f"The data type of number entered by the user is {type(num)}")
+    val_number = validate_number(num)
+    if validate_number(num):
+        print(f"The validated number is: {val_number}")
+        print(type(val_number))  # num is a string not float
+        return val_number
+    else:
+        request_any_number()
+    # if validate_number(val_number):
+
+    # if num:
+    #    if validate_number(num):
+    #        print(f"The validated number is: {val_number}")
+    #        print(type(val_number))  # num is a string not float
+    #        return val_number
+    #    else:
+    #        request_any_number()
+
+
 def validate_number(number):
     try:
-        val = float(number)
+        val_num = float(number)
         print("The input entered by the user is Ok!")
-        return val
+        print(type(val_num))
+        if type(val_num) == float:
+            return val_num
     except ValueError:
         print("""Invalid input, NOT a number,
-              Please try again!""")
+            Please try again!""")
+        print(number)
 
 
 print("Welcome to our text-based Calculator")
