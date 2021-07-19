@@ -14,15 +14,15 @@ def calculate_operation():
     NUM_CONSTANT = 0.5
     if choice == 'g':
         print("Doing the Square Root Calculation...\n")
-        num = float(input("Enter a number: "))
+        num = input("Enter a number:\n")
         validate_number(num)
         result = num ** NUM_CONSTANT
         print("Square Root Calculation completed Successfully.\n")
         return result
     else:
-        num_1 = float(input("Enter your first number: "))
+        num_1 = input("Enter your first number:\n")
         validate_number(num_1)
-        num_2 = float(input("Enter your second number: "))
+        num_2 = input("Enter your second number:\n")
         validate_number(num_2)
         if choice == 'a':
             print("Doing the Add Calculation...\n")
@@ -68,5 +68,6 @@ def validate_number(number):
               Please try again!""")
 
 
+print("Welcome to our text-based Calculator")
 answer = calculate_operation()
 print(f"Result of your calculation is {answer}")
