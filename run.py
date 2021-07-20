@@ -74,10 +74,10 @@ print(f"Welcome {your_name} to the Calculator5000")
 answer = calculate_operation()
 print(f"The Final Result of your calculation is {answer}")
 
-response = input("Would you like to Perform another Calculation y/n? ")
+response = input("Would you like to Perform another Calculation y/n?\n")
 while response == "y" or response == "Y":
     my_new_answer = calculate_operation()
     print(f"The Final Result of your calculation is {my_new_answer}\n")
-    response = input("Would you like to Perform another Calculation y/n? ")
+    response = input("Would you like to Perform another Calculation y/n?\n")
 else:
     print(f"Thanks for using the Calculator5000 {your_name}, Goodbye!")
