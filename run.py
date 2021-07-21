@@ -1,7 +1,8 @@
 def choose_operator():
     global choice
     choice = input(
-                    """Please Enter the operator you need for your calculation:\n """
+                    """Please Enter the operator you need
+                    for your calculation:\n"""
                     "a for Add\n"
                     "b for Subtract\n"
                     "c for Multiply\n"
