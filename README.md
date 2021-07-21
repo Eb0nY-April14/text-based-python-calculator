@@ -4,7 +4,7 @@
 
 This is a calculator project that was created using Python Programming language. It is a very basic calculator with simple functionalities which allows a user to input a number or 2 numbers based on the operation to be performed and the code carries out the operation and returns the appropriate result. Interaction with the calculator is restricted to the terminal as Python is a back-end language so there is no GUI available to the user. They simply follow the text-based instructions displayed at the terminal aand if the instructions are followed correctly, they will get their desired result printed to the terminal.
 
-![Calculator on Desktop, Laptop, Tablet & Smatphone](screenshots/amIResponsiveCalcScreenshot.PNG)
+![Calculator on Desktop, Laptop, Tablet & Smatphone](screenshots/amIResponsiveCalcScreenshot.png)
 
 # Features
 
@@ -31,49 +31,25 @@ User Experience (UX)
     * User Goals
 
         a) I want to be able to add two numbers together and get the right result.
-        ![addition Screenshot](screenshots/addCalcScreenshot1.PNG)
-        ![addition Screenshot](screenshots/addCalcScreenshot2.PNG)
 
         b) I want to be able to subtract two numbers and get the right result.
-        ![subtraction Screenshot](screenshots/subtractCalcScreenshot1.PNG)
-        ![subtraction Screenshot](screenshots/subtractCalcScreenshot2.PNG)
+    
+        c) I want to be able to multiply two numbers and get the right result. 
 
-        c) I want to be able to multiply two numbers and get the right result.
-        ![multiplication Screenshot](screenshots/multiplyCalcScreenshot1.PNG)
-        ![multiplication Screenshot](screenshots/multiplyCalcScreenshot2.PNG) 
-
-        d) I want to be able to divide two numbers and get the right result.
-        ![division Screenshot](screenshots/divideCalcScreenshot1.PNG)
-        ![division Screenshot](screenshots/divideCalcScreenshot2.PNG) 
+        d) I want to be able to divide two numbers and get the right result. 
 
         e) I want to be able to calculate the modulo (remainder after dividing two numbers) and get the right result. 
-        ![modulo Screenshot](screenshots/moduloCalcScreenshot1.PNG)
-        ![modulo Screenshot](screenshots/moduloCalcScreenshot2.PNG)
-
+        
         f) I want to be able to calculate the exponent (power) of two numbers and get the right result.
-        ![Exponent Screenshot](screenshots/exponentCalcScreenshot1.PNG)
-        ![Exponent Screenshot](screenshots/exponentCalcScreenshot2.PNG) 
-
+        
         g) I want to be able to calculate the square root of a number and get the right result. 
-        ![SquareRoot Screenshot](screenshots/sqrootCalcScreenshot.PNG)
 
-        h) I want to be able to get feedback if wrong operand (number)  is entered as input.
-        ![Wrong Operand Screenshot](screenshots/invalidOperandInputCalcScreenshot1.PNG)
-        ![Wrong Operand Screenshot](screenshots/invalidOperandInputCalcScreenshot.PNG)
+        h) I want to be able to get feedback if wrong operand (number) is entered as input.
 
         i) I want to be able to get feedback if wrong operator is entered as input.
-        ![Wrong Operator Screenshot](screenshots/invalidOperatorInputCalcScreenshot.PNG)
-
-        j) I want to be able to continue using the calculator without running the app afresh and quit whenever I like.
-        ![ReplayQuitScreenshot](screenshots/quitReplay CalcScreenshot1.PNG)
-
-        ![ReplayQuitScreenshot](screenshots/quitReplay CalcScreenshot2.PNG) 
-
-        ![ReplayQuitScreenshot](screenshots/quitReplay CalcScreenshot3.PNG)
-
-        ![ReplayQuitScreenshot](screenshots/quitReplay CalcScreenshot4.PNG) 
         
-
+        j) I want to be able to continue using the calculator without running the app afresh and quit whenever I like.
+        
 # Flowchart
 
 The flowchart was used to conceptualise/bring the text-based calculator idea to life. It was drawn manually using pencil and paper to depict how the flow of the program will go.
@@ -100,22 +76,14 @@ The flowchart was used to conceptualise/bring the text-based calculator idea to 
 
     * When a user finishes an operation, I want the code to ask the user if he wants to perform any more calculation and if 'y' is chosen by the user, the program should present the user with the option to choose the operator and the operands needed again and perform the required calculation for as long as the user wants and to quit when the user chooses 'n'  but when I ran my code it was not performing as such. I knew I would need a while loop but where to place that in the code was tricky but after many failed attempts, I figured that the while loop should be added to the user's response of 'yes or no'. If Yes is chosen,it continues to loop and if No, it exits the calculator. I also called the calculate_operation() function within the while loop. See screenshot below:
 
-    ![WhileLoop](screenshots/calcLoop.PNG)
+    ![WhileLoop](screenshots/calcLoop.png)
 
     * Initially, the "choice" variable for the input operator was made as a standalone code and when the program is called to run again when a user chooses 'yes', the 'choice' variable could not be called which made it impossible for a user to choose their operator so I decided to wrap it into a function named choose_operator() and when the calculate_operation() is called, the choose_operator() function will be called first within it, and this approach worked. 
 
-    * When the code was run in Gitpod workspace, every part worked perfectly well but on the deployed site, Heroku, it performed the required operation and displayed the final result but didn't display the loop question/message that says "Do you want to perform another calculation y/n?. On pressing the enter key, it then displays the question together with the goodbye message signalling the end without allowing the user to pick an option of 'y' or 'no'. After searching for resources online and trying several things, I found out that not adding a new line character ("\n") at the end of the question caused the error. See screenshot below:
+    * When the code was run in Gitpod workspace, every part worked perfectly well but on the deployed site, Heroku, it performed the required operation and displayed the final result but didn't display the loop question/message that says "Do you want to perform another calculation y/n?. On pressing the enter key, it then displays the question together with the goodbye message signalling the end without allowing the user to pick an option of 'y' or 'no'. After searching for resources online and trying several things, I found out that the solution to the issue was already explained in the deployment section of the love-sandwiches video, not adding a new line character ("\n") at the end of the question caused the error. See screenshot below:
 
-    ![New Line](screenshots/newLineError.PNG).
+    ![New Line](screenshots/newLineError.png).
 
-
-
-
-
-
- Getting to implement feedback message that asks the user if they wish to perform another calculation 
-
-In the course of developing this app, I wanted to implement
 
 Frameworks, Libraries and Programs Used
 
@@ -131,7 +99,9 @@ I am aware that the requirements.txt file is empty since I didn't need it for my
 
 ## Testing
 
-PEP8 Testing Write-ups and Screenshots will be here
+PEP8 online validation tool was used to validate the code to ensure there were no syntax errors or improper code indentation. It passed the test as seen in the screenshot below:
+
+![PEP8 Testing](screenshots/PEP8Validator.png)
 
 
 
@@ -141,69 +111,80 @@ i. I want to be able to add two numbers together and get the right result.
 
     a. User inputs two numbers, the app performs the addition operation and produces the correct result as seen in the screenshots below:
 
-![addition Screenshot](screenshots/addCalcScreenshot1.PNG)
-![addition Screenshot](screenshots/addCalcScreenshot2.PNG)
+![addition Screenshot](screenshots/addCalcScreenshot1.png)
+![addition Screenshot](screenshots/addCalcScreenshot2.png)
 
 ii. I want to be able to subtract two numbers and get the right result.
 
     a. User inputs two numbers, the app performs the subtraction operation and produces the correct result as seen in the screenshots below: 
 
-![subtraction Screenshot](screenshots/subtractCalcScreenshot1.PNG)
-![subtraction Screenshot](screenshots/subtractCalcScreenshot2.PNG)
+![subtraction Screenshot](screenshots/subtractCalcScreenshot1.png)
+![subtraction Screenshot](screenshots/subtractCalcScreenshot2.png)
 
 iii. I want to be able to multiply two numbers and get the right result.
 
     a.  User inputs two numbers, the app performs the multiplication operation and produces the correct result as seen in the screenshots below: 
 
-![multiplication Screenshot](screenshots/multiplyCalcScreenshot1.PNG)
-![multiplication Screenshot](screenshots/multiplyCalcScreenshot2.PNG) 
+![multiplication Screenshot](screenshots/multiplyCalcScreenshot1.png)
+![multiplication Screenshot](screenshots/multiplyCalcScreenshot2.png) 
 
 iv. I want to be able to divide two numbers and get the right result.
 
     a. User inputs two numbers, the app performs the division operation and produces the correct result as seen in the screenshots below:
 
-![division Screenshot](screenshots/divideCalcScreenshot1.PNG)
-![division Screenshot](screenshots/divideCalcScreenshot2.PNG) 
+![division Screenshot](screenshots/divideCalcScreenshot1.png)
+![division Screenshot](screenshots/divideCalcScreenshot2.png) 
 
 v. I want to be able to calculate the modulo (remainder after dividing two numbers) and get the right result.
 
     a. User inputs two numbers, the app performs the modulo operation and produces the correct result as seen in the screenshots below:
 
-![Modulo Screenshot](screenshots/moduloCalcScreenshot1.PNG)
-![Modulo Screenshot](screenshots/moduloCalcScreenshot2.PNG)
+![Modulo Screenshot](screenshots/moduloCalcScreenshot1.png)
+![Modulo Screenshot](screenshots/moduloCalcScreenshot2.png)
 
 vi. I want to be able to calculate the exponent (power) of two numbers and get the right result.
 
     a. User inputs two numbers, the app performs the exponent operation and produces the correct result as seen in the screenshots below:
 
-![Exponent Screenshot](screenshots/exponentCalcScreenshot1.PNG)
-![Exponent Screenshot](screenshots/exponentCalcScreenshot2.PNG) 
+![Exponent Screenshot](screenshots/exponentCalcScreenshot1.png)
+![Exponent Screenshot](screenshots/exponentCalcScreenshot2.png) 
 
 vii. I want to be able to calculate the square root of a number and get the right result. 
 
     a. User inputs one number only, the app performs the square root operation and produces the correct result as seen in the screenshot below: 
 
-![SquareRoot Screenshot](screenshots/sqrootCalcScreenshot.PNG)
+![SquareRoot Screenshot](screenshots/sqrootCalcScreenshot.png)
 
 viii. I want to be able to get feedback if wrong operand (number) is entered as input.
 
     a. User inputs incorrect operand, the app displays the message "Invalid input - NOT a number, Please try again!" to the screen and gives them the opportunity to re-choose a valid operand. See screenshots below: 
 
-![Wrong Operand Screenshot](screenshots/invalidOperandInputCalcScreenshot1.PNG)
-![Wrong Operand Screenshot](screenshots/invalidOperandInputCalcScreenshot2.PNG)
+![Wrong Operand Screenshot](screenshots/invalidOperandInputCalcScreenshot1.png)
+![Wrong Operand Screenshot](screenshots/invalidOperandInputCalcScreenshot2.png)
 
 ix. I want to be able to get feedback if wrong operator is entered as input.
 
     a. User inputs incorrect choice of operator, the app proceeds to ask the user to input the 2 numbers, then it displays the error message "The Final Result of your calculation is Null. You entered an invalid operator" and asks the user if he wants to perform another Calculation as seen in the screenshot below:
 
-![Wrong Operator Screenshot](screenshots/invalidOperatorInputCalcScreenshot.PNG)
+![Wrong Operator Screenshot](screenshots/invalidOperatorInputCalcScreenshot.png)
 
 x. I want to be able to continue using the calculator without running the app afresh and quit whenever I like.
 
     a. Once the app displays the result of the current calculation, it asks the user if he wants to perform another calculation. If 'y' or 'Y' is chosen, the app continues by asking the user to choose the operator needed and the whole process is repeated again for as many times as the user wants but if 'n' or 'N' is chosen, the calculator app displays goodbye message to the user and quits as seen in the screenshots below:
 
-![ReplayQuitScreenshot](screenshots/quitReplay CalcScreenshot1.PNG)
-![ReplayQuitScreenshot](screenshots/quitReplay CalcScreenshot2.PNG) 
-![ReplayQuitScreenshot](screenshots/quitReplay CalcScreenshot3.PNG)
-![ReplayQuitScreenshot](screenshots/quitReplay CalcScreenshot4.PNG) 
+![Replay Quit Screenshot](screenshots/quitReplayCalcScreenshot1.png)
+![Replay Quit Screenshot](screenshots/quitReplayCalcScreenshot2.png) 
+![Replay Quit Screenshot](screenshots/quitReplayCalcScreenshot3.png)
+![Replay Quit Screenshot](screenshots/quitReplayCalcScreenshot4.png)
+
+---
+
+# Deployment
+
+* The Project was deployed to Heroku using the following steps:
+
         
+
+
+
+I am aware that the requirements.txt file has no content in it but I left it in because it is required  in order for heroku to run perfectly.
