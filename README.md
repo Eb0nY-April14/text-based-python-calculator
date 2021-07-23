@@ -104,8 +104,7 @@ PEP8 online validation tool was used to validate the code to ensure there were n
 ![PEP8 Testing](screenshots/PEP8Validator.png)
 
 
-
-Testing User Stories from User Experience (UX) Section
+### Testing User Stories from User Experience (UX) Section
 
 i. I want to be able to add two numbers together and get the right result.
 
@@ -182,6 +181,8 @@ x. I want to be able to continue using the calculator without running the app af
 # Deployment
 
 * The Project was deployed to Heroku using the following steps:
+
+  1. Firstly, in order for the input method to work correctly in the deployed platform Heroku, a new line character should be added at the end of the text or else it will not show up in the terminal.  
 
         
 
