@@ -180,8 +180,14 @@ x. I want to be able to continue using the calculator without running the app af
 
 # Cloning (Local Deployment)
 
-The following steps need to be followed if a user wants to clone (i.e copy this app onto their machine and run it locally from there) this app:
+* To run this application locally, the repository can be cloned (i.e copy the app onto their machine and run it locally from there) by following the steps below:
 
+1. Type the following command into your terminal:
+git clone https://github.com/Eb0nY-April14/text-based-python-calculator.git
+
+2. After the project is cloned, you would normally install the packages from the requirements.txt file using this command: 
+pip3 install -r requirements.txt
+However, this project does not contain any external Python packages but it's still needed (i.e requirements.txt file) purely for the Heroku setup. 
 
 # Deployment
 
@@ -202,8 +208,40 @@ The following steps need to be followed if a user wants to clone (i.e copy this 
 
   5. From the Heroku dashboard, click on the "Create new app" button, give your app a name which has to be unique, select your region and click on the "Create app" button. 
 
-  6. Click on the "settings" tab at the top of the page and scroll down to locate the 'Config Vars' section, then click on the 'Reveal Config Vars'. In the 'KEY' field, type into it the word "CREDS" all in capital letters and for the 'VALUE' field, go over to your workspace, copy the entire creds.json file and paste it into the 'VALUE' field, then click the 'Add' button.
+  6. Click on the "Settings" tab at the top of the page and scroll down to locate the 'Config Vars' section, then click on the 'Reveal Config Vars'. In the 'KEY' field, type into it the word "CREDS" all in capital letters and for the 'VALUE' field, go over to your workspace, copy the entire creds.json file and paste it into the 'VALUE' field, then click the 'Add' button.
+
+  7. Next, scroll down again to locate the 'Buildpacks' section and click on the "Add buildpack" button, then select "Python" as the first buildpack needed and click the "Save changes" button. 
+  Click on the "Add buildpack" button again, select the "node.js" as the second buildpack needed and click the "Save changes" button.
+  Ensure that the buildpacks are in the order of Python on top and node.js underneath or else click and drag them to the right order.
+
+  8. Click on the "Deploy" tab at the top of the page and choose GitHub as the deployment method, then scroll down a little and click on the "Connect to GitHub" button.
+  
+  9. Search for your repository name by typing the name you gave it into the search box and click "Search" button, then click on "connect" to link up your Heroku app to your GitHub repository code.
+
+  10. Next, scroll down to the "Automatic deploys" section and click the 'Enable Automatic Deploys' button so that Heroku can rebuild the app every time a new change is pushed to your code on GitHub.
+
+  11. Finally, a message which says "Your app was successfully deployed" is displayed and a 'View' button is also provided to take you to the deployed link. 
+
+  12. On the deployed site, the program starts (i.e runs) automatically but to restart it (i.e run it again), click the "RUN PROGRAM" button at the top of the page.
+
+View the live project [here](https://my-text-based-calculator.herokuapp.com/)
 
 
-I am aware that the requirements.txt file has no content in it but I left it in because it is required in order for heroku to run perfectly.
+View the GitHub Repository [here](https://github.com/Eb0nY-April14/text-based-python-calculator)
+
+
+I am aware that the requirements.txt file has no content in it. I didn't use it since it's not needed for my project but it was left in because it is required in order for heroku to run perfectly.
+
+* Credits
+
+  * Stack Overflow resource on asking user for input until a valid reponse is given using while loop, handling exceptions using "try and except" to detect when the user enters data that can't be parsed
+  https://stackoverflow.com/a/23294659 
+
+  * Acknowledgements
+
+    * Cohort Facilitator Kasia for her continuous help and support.
+
+    * My mentor Tim Nelson for his immense help, continuous guidance and feedback.
+
+    * Stack Overflow Website for helpful resources especially with handling exceptions and looping continuously until valid input and response are provided.
 
