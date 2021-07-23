@@ -178,18 +178,32 @@ x. I want to be able to continue using the calculator without running the app af
 
 ---
 
+# Cloning (Local Deployment)
+
+The following steps need to be followed if a user wants to clone (i.e copy this app onto their machine and run it locally from there) this app:
+
+
 # Deployment
 
+* To deploy this Project to Heroku, follow the steps below:
+
+  1. Firstly, in order for the input method to work correctly in the deployed platform Heroku, a new line character needs to be added at the end of the input text and save it or else the text will not show up in the terminal. 
+
+  2. Next, create a list of requirements that the project needs in order to run. Since several dependencies such as gspread and google-auth were installed into the workspace when we set it up initially, Heroku needs to install these dependencies as well and they need to go into the requirements.txt file.  
+  To create the list of requirements, type the command below into the terminal:
+  pip3 freeze > requirements.txt
+  Then press the 'Enter' key.
+
+  3. Go to Heroku website and create an account with them by clicking on the link below:
+  https://id.heroku.com/login
+  Fill out the form by providing your details such as First Name, Last Name, Email Address, Role e.g 'student', your Country i.e location, and Language i.e Python.  Confirm you are human and not a robot, then click the "Create free account" button on the page.
+
+  4. Go to the email used for heroku registration and open up the confirmation email sent out to you. Click the link provided to confirm and you will be taken to another page to create a password, then click on the "SET PASSWORD AND LOGIN BUTTON". A welcome message is displayed so click on the "CLICK HERE TO PROCEED" button, accept their terms of service and the heroku dashboard will be displayed.
+
+  5. From the Heroku dashboard, click on the "Create new app" button, give your app a name which has to be unique, select your region and click on the "Create app" button. 
+
+  6. Click on the "settings" tab at the top of the page and scroll down to locate the 'Config Vars' section, then click on the 'Reveal Config Vars'. In the 'KEY' field, type into it the word "CREDS" all in capital letters and for the 'VALUE' field, go over to your workspace, copy the entire creds.json file and paste it into the 'VALUE' field, then click the 'Add' button.
 
 
-* The Project was deployed to Heroku using the following steps:
+I am aware that the requirements.txt file has no content in it but I left it in because it is required in order for heroku to run perfectly.
 
-  1. Firstly, in order for the input method to work correctly in the deployed platform Heroku, you need to add a new line character at the end of the text and save it or else the text will not show up in the terminal. 
-
-  2. Next, you will create a list of requirements that the project needs in order to run.  Since we installed several dependencies such as gspread and google-auth into the workspace when we set it up initially, you need Heroku  
-
-        
-
-
-
-I am aware that the requirements.txt file has no content in it but I left it in because it is required  in order for heroku to run perfectly.
