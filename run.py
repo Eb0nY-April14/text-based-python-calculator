@@ -32,8 +32,8 @@ def calculate_operation():
         print("Square Root Calculation completed Successfully.\n")
         return result
     else:
-        num_1 = request_any_number("the_first")
-        num_2 = request_any_number("the_second")
+        num_1 = request_any_number("the first")
+        num_2 = request_any_number("the second")
         my_choice = choice
         if my_choice == "a":
             print("Doing the Add Calculation...\n")
@@ -88,7 +88,7 @@ def request_any_number(pos):
 Accept user name and displays a personalised welcome message
 to the user.
 """
-your_name = input("Please Enter your name: \n")
+your_name = input("(Optional) Please Enter your name: \n")
 print(f"Welcome {your_name} to the Calculator5000")
 answer = calculate_operation()
 print(f"The Final Result of your calculation is {answer}")
