@@ -6,15 +6,15 @@ def choose_operator():
     """
     global choice
     choice = input(
-                    """Please Enter the operator you need
-                    for your calculation:\n"""
-                    "a for Add\n"
-                    "b for Subtract\n"
-                    "c for Multiply\n"
-                    "d for Divide\n"
-                    "e for Modulo\n"
-                    "f for Power(Exponent)\n"
-                    "g for Square Root\n")
+                   "Please Enter the operator you need"
+                   "for your calculation: \n"
+                   "a for Add\n"
+                   "b for Subtract\n"
+                   "c for Multiply\n"
+                   "d for Divide\n"
+                   "e for Modulo\n"
+                   "f for Power(Exponent)\n"
+                   "g for Square Root\n")
     return choice
 
 
