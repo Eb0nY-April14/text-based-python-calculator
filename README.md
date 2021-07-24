@@ -1,8 +1,8 @@
 ![Calculator Image](screenshots/calculator_image_resize.jpg)
 
-# Text-based Calculator
+# Calculator5000
 
-This is a calculator project that was created using Python Programming language. It is a very basic calculator with simple functionalities which allows a user to input a number or 2 numbers based on the operation to be performed and the code carries out the operation and returns the appropriate result. Interaction with the calculator is restricted to the terminal as Python is a back-end language so there is no GUI available to the user. They simply follow the text-based instructions displayed at the terminal aand if the instructions are followed correctly, they will get their desired result printed to the terminal.
+This is a text-based calculator project that was created using Python Programming language. It is a very basic calculator with simple functionalities which allows a user to input either a number or 2 numbers based on the operation to be performed and the code carries out the operation and returns the appropriate result. Interaction with the calculator is restricted to the terminal as Python is a back-end language so there is no GUI available to the user. They simply follow the text-based instructions displayed at the terminal and if the instructions are followed correctly, they will get their desired result printed to the terminal.
 
 ![Calculator on Desktop, Laptop, Tablet & Smatphone](screenshots/am_i_responsive_calc_screenshot.png)
 
