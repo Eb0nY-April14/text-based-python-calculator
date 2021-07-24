@@ -246,5 +246,5 @@ I am aware that the requirements.txt file has no content in it. I didn't use it 
 
     * My mentor Tim Nelson for his immense help, continuous guidance and feedback.
 
-    * Stack Overflow and Flake8Rules websites for helpful resources especially with handling exceptions and looping continuously until valid input and response are provided.
+    * Stack Overflow and Flake8Rules websites for helpful resources especially with handling exceptions, looping continuously until valid input and response are provided and continuation line indentation.
 
