@@ -95,8 +95,6 @@ Frameworks, Libraries and Programs Used
 
     * GitHub was used to store the project's code after being pushed from Git.
 
-I am aware that the requirements.txt file is empty since I didn't need it for my project but I have left it in because I know it's needed for the Heroku to run
-
 ## Testing
 
 PEP8 online validation tool was used to validate the code to ensure there were no syntax errors or improper code indentation. It passed the test as seen in the screenshot below:
