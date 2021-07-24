@@ -165,7 +165,9 @@ ix. I want to be able to get feedback if wrong operator is entered as input.
 
     a. User inputs incorrect choice of operator, the app proceeds to ask the user to input the 2 numbers, then it displays the error message "The Final Result of your calculation is Null. You entered an invalid operator" and asks the user if he wants to perform another Calculation as seen in the screenshot below:
 
-![Wrong Operator Screenshot](screenshots/invalid_operator_input_calc_screenshot.png)
+![Wrong Operator Screenshot](screenshots/invalid_operator_input_calc_screenshot1.png)
+
+![Wrong Operator Screenshot](screenshots/invalid_operator_input_calc_screenshot2.png)
 
 x. I want to be able to continue using the calculator without running the app afresh and quit whenever I like.
 
@@ -237,11 +239,14 @@ I am aware that the requirements.txt file has no content in it. I didn't use it 
   * Stack Overflow resource on asking user for input until a valid reponse is given using while loop, handling exceptions using "try and except" to detect when the user enters data that can't be parsed
   https://stackoverflow.com/a/23294659 
 
+  * Flake8Rules resource was used to solve an error encountered which relates to continuation line unaligned for hanging indents
+  https://www.flake8rules.com/rules/E131.html
+
   * Acknowledgements
 
     * Cohort Facilitator Kasia for her continuous help and support.
 
     * My mentor Tim Nelson for his immense help, continuous guidance and feedback.
 
-    * Stack Overflow Website for helpful resources especially with handling exceptions and looping continuously until valid input and response are provided.
+    * Stack Overflow and Flake8Rules websites for helpful resources especially with handling exceptions and looping continuously until valid input and response are provided.
 
